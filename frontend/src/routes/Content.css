@@ -1,0 +1,10 @@
+html, body, #root, .container {height:100%;}
+body {overflow-x:hidden;}
+
+.content {
+    background-color:#fac;
+    height:100%;
+    padding:10px;
+    text-align:center;
+    
+}

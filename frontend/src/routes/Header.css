@@ -1,0 +1,17 @@
+.menu {
+    background-color:#bbb;
+    padding:5px;
+    box-sizing:border-box;
+    overflow:hidden;
+    
+}
+
+.menu h2 {
+    float:left;
+    
+}
+
+.right {
+    float:right;
+    
+}

@@ -10,7 +10,8 @@ class Login extends React.Component {
         
         this.state = {
             username : '',
-            userpass : ''
+            userpass : '',
+            login : false
             
         };
         
@@ -48,8 +49,11 @@ class Login extends React.Component {
                 let {success, error} = response.data;
                 let {history} = this.props;
                 
-                if(success === 1)
-                    history.push('/company');
+                if(success === 1) {
+                    this.setState({login : true});
+                    history.push('/company', this.state.login);
+                    
+                }
                 
                 else if(success === 2)
                     history.push('/register');
