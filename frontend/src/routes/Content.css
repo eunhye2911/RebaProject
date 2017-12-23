@@ -12,22 +12,46 @@ body {
 
 .list {
     padding:10px;
-    max-width:1000px;
+    width:calc(100% - 100px);
     background-color:rgba(255,255,255,0.5);
-    margin:20px auto;
+    margin:50px;
     height:80%;
     box-shadow:1px 1px 15px #aaa;
     
 }
 
 .list li {
-    width:calc(25% - 20px);
+    width:calc(20% - 20px);
     height:calc(50% - 20px);
     background-color:#fff;
     border:1px solid #ddd;
     margin:10px;
     float:left;
     position:relative;
+    
+}
+
+@media screen and (max-width:1200px) {
+    .list li {
+        width:calc(33.33333333% - 20px);
+        
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    .list li {
+        width:calc(50% - 20px);
+        
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    body .list li {
+        width:calc(100% - 20px);
+        
+    }
     
 }
 
