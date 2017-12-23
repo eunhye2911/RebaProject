@@ -5,6 +5,7 @@ body {overflow-x:hidden;}
 
 body {
     background-color:#fac;
+    background-image:url('../images/city.jpg');
     height:100%;
     
 }

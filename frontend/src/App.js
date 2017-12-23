@@ -5,6 +5,16 @@ import Login from './routes/Login';
 import Company from './routes/Company';
 
 class App extends React.Component {
+    constructor() {
+        super();
+        
+        this.state = {
+            login : false
+            
+        };
+        
+    }
+    
     render() {
         return (
             <Router>

@@ -14,19 +14,22 @@ class Company extends React.Component {
         };
         
         this.getDataFromAxios = this.getDataFromAxios.bind(this);
-        
-        console.log(this.state.Array);
-        
+
     }
     
     componentDidMount() {
-        axios.get('http://localhost:4000/company').then(res => {
+        if(this.props.login == false)
+            this.props.history.push('/login');
+        
+        else{
+            axios.get('http://localhost:4000/company').then(res => {
+
+                this.setState({Array : this.state.Array.concat(res.data.company)});
+
+            });
             
-            this.setState({Array : this.state.Array.concat(res.data.company)});
-            
-        });
-        console.log(this.state.Array);
-        console.log('aaa');
+        }
+        
         
     }
     
