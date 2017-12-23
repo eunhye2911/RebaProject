@@ -12,7 +12,7 @@ var data = {
         name : 'aaa',
         job : 'bbb',
         compensation : 1000000,
-        hits : 11
+        hits : 0
         
     },
     

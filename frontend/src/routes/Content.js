@@ -1,6 +1,19 @@
 import React from 'react';
 
 class Content extends React.Component {
+    constructor() {
+        super();
+        
+        this.hitsCheck = this.hitsCheck.bind(this);
+        
+    }
+    
+    hitsCheck(v) {
+        if(v > 0) 
+            return <p>{this.props.arr.hits}명 추천</p>;
+        
+    }
+    
     render() {
         return (
             <li>
@@ -26,7 +39,7 @@ class Content extends React.Component {
                 
                 <div className="bottom">
                     <p className="hits">
-                        {this.props.arr.hits}명 추천
+                        {this.props.arr.hits > 0 && <span>{this.props.arr.hits}명 추천</span>}
                     
                     </p>
 
