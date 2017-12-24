@@ -14,7 +14,13 @@ class Company extends React.Component {
         };
         
         this.getDataFromAxios = this.getDataFromAxios.bind(this);
+        this.handleClick = this.handleClick.bind(this);
 
+    }
+    
+    handleClick(id) {
+        this.props.history.push('/company/' + id);
+        
     }
     
     componentDidMount() {
@@ -46,7 +52,11 @@ class Company extends React.Component {
                 <ul className="list">
                     {
                         this.state.Array.map((v) => {
-                            return (<Content arr={v} />)
+                            return (<Content 
+                                        cardLink={this.handleClick}
+                                        key={v.id}
+                                        company_id={v.id}
+                                        arr={v} />)
                         })
                         
                     }

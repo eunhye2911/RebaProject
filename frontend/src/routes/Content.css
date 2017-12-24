@@ -17,6 +17,7 @@ body {
     margin:50px;
     height:80%;
     box-shadow:1px 1px 15px #aaa;
+    overflow:hidden;
     
 }
 
@@ -28,6 +29,7 @@ body {
     margin:10px;
     float:left;
     position:relative;
+    cursor:pointer;
     
 }
 

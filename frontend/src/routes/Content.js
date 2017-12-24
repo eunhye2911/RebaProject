@@ -16,7 +16,7 @@ class Content extends React.Component {
     
     render() {
         return (
-            <li>
+            <li onClick={()=>{this.props.cardLink(this.props.company_id)}}>
                 <img></img>
                 
                 <div className="info">

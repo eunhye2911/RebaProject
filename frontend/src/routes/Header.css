@@ -9,12 +9,15 @@ a {color:#fff;}
     line-height:70px;
     color:#fff;
     box-shadow:0px 1px 1px #acf;
+    z-index:1000;
     
 }
 
 .menu h2 {    
     line-height:70px;
     float:left;
+    cursor:pointer;
+    margin-right:20px;
     
 }
 
@@ -22,3 +25,13 @@ a {color:#fff;}
     float:right;
     
 }
+
+.category li {
+    float:left;
+    padding:2px 20px;
+    font-size:16px;
+    cursor:pointer;
+    
+}
+
+.category li:hover, .menu h2:hover {color:#5df;}
