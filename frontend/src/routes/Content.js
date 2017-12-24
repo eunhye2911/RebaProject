@@ -21,7 +21,7 @@ class Content extends React.Component {
                 
                 <div className="info">
                     <p className="job">
-                        {this.props.arr.job}
+                        {this.props.arr.type}
                     
                     </p>
                     
@@ -31,7 +31,7 @@ class Content extends React.Component {
                     </p>
                     
                     <p className="compensation">
-                        채용보상금 {this.props.arr.compensation}원
+                        채용보상금 {this.props.arr.rebate}원
                     
                     </p>
                     
@@ -39,7 +39,7 @@ class Content extends React.Component {
                 
                 <div className="bottom">
                     <p className="hits">
-                        {this.props.arr.hits > 0 && <span>{this.props.arr.hits}명 추천</span>}
+                        {this.props.arr.recommendation > 0 && <span>{this.props.arr.recommendation}명 추천</span>}
                     
                     </p>
 

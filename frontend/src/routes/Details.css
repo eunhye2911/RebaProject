@@ -1,0 +1,14 @@
+.Details {
+    background-color:rgba(255,255,255,0.3);
+    height:100%;
+    padding:0 40px;
+    
+}
+
+.Details .container {
+    max-width:900px;
+    margin:0 auto;
+    background-color:rgba(200,240,255,0.5);
+    box-shadow:0px 0px 15px #cdf;
+    
+}

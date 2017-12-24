@@ -47,4 +47,17 @@ app.get('/company', function(req, res) {
     
 });
 
+app.get('/company/:company_id', function(req, res){
+    console.log(req.params.company_id);
+    
+    var all = companyList.company;
+    const result = all.filter(function(v) {
+        return v.id == req.params.company_id;
+                
+    });
+    
+    res.json(result[0]);
+    
+});
+
 const server = app.listen(4000);
