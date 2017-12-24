@@ -19,7 +19,7 @@ class Header extends React.Component {
     render() {        
         return (
             <div className="menu">
-                <h2>Web</h2>
+                <h2>Web{this.props.title}</h2>
                 
                 <ul className="category">
                     <li onClick={()=>{this.handleCategory('all')}}>

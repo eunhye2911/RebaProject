@@ -1,7 +1,7 @@
 import React from 'react';
 import './Details.css';
 import axios from 'axios';
-import ReactSlider from 'react-slider';
+import SimpleSlider from './SimpleSlider';
 import Header from './Header';
 
 class Details extends React.Component {
@@ -38,7 +38,6 @@ class Details extends React.Component {
                         <div className="left">
                             {console.log(currentData)}
                             <div className="photo">
-                                <ReactSlider defaultValue={50} />                        
 
                             </div>
                             <div calssName="desc">

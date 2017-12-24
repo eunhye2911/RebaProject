@@ -9,12 +9,13 @@ class Company extends React.Component {
         super();
         
         this.state = {
-            Array : []
-            
+            Array : [],
+            headerData : ''
         };
         
         this.getDataFromAxios = this.getDataFromAxios.bind(this);
         this.handleClick = this.handleClick.bind(this);
+        this.tossHeader = this.tossHeader.bind(this);
 
     }
     
@@ -44,16 +45,21 @@ class Company extends React.Component {
         
     }
     
+    tossHeader(asd){
+     this.setState({ headerData : asd })   
+    }
+    
     render() {
         return (
             <div className="container">
-                <Header />
+                <Header title={this.state.headerData}/>
             
                 <ul className="list">
                     {
                         this.state.Array.map((v) => {
                             return (<Content 
                                         cardLink={this.handleClick}
+                                        toss={this.tossHeader}
                                         key={v.id}
                                         company_id={v.id}
                                         arr={v} />)
